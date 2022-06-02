@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Space+Mono&display=swap');
+
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: hsl(0, 0%, 13%);
+}
+
+:root {
+    --logoFont: 'Space Mono', monospace;
+    --textFont: 'Roboto', sans-serif;
+    --lightText: #f2f2f2;
+}
+
+nav {
+    width: 100%;
+    height: 10vh;
+    background-color: hsl(0, 0%, 13%);
+}
+
+.nav__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.nav__container .logo {
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+}
+
+
+
+.nav__container .logo .fa-code {
+    margin-right: 1rem;
+    font-size: 3rem;
+    color: var(--lightText);
+}
+
+.nav__container .logo h1 {
+    font-family: var(--logoFont);
+    color: var(--lightText);
+}
+
+.links__container {
+    display: flex;
+    align-items: center;
+}
+
+.links__container li {
+    margin: 0 1.5rem;
+}
+
+.links__container li a {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-family: var(--textFont);
+    letter-spacing: 1.5px;
+    color: var(--lightText);
+}
+
+#contactBtn {
+    margin-left: 3rem;
+    border: none;
+    padding: 1rem 2rem;
+    text-transform: uppercase;
+    font-family: var(--textFont);
+    font-size: 1.5rem;
+}
+
+#contactBtn:hover {
+    cursor: pointer;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 4rem 0;
+    
+    width: 100%;
+}
+
+.container {
+    max-width: 400px;
+    max-height: 600px;
+}
+
+.container img {
+    filter: grayscale();
+}
+
+main h1, p {
+    color: var(--lightText);
+    font-family: var(--textFont);
+}
+
+main h1 {
+    font-size: 4rem;
+    padding-bottom: 1.5rem;
+}
+
+main p {
+    font-size: 2rem;
+}
+
+.intro__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+}
